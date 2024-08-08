@@ -65,3 +65,19 @@ button {
 button:hover {
     background-color: #0e2338;
 }
+
+
+.button-solo .button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #224a75;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button-solo .button:hover {
+    background-color: #0e2338;
+}

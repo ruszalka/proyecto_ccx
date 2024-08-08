@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Azafatas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Imagen centrada al medio del sitio -->
+      <img src="crew1.png" alt="Imagen Central" class="central-image">
+
+    <div id="novela-grafica">
+        <!-- Página 1: Introducción -->
+        <div class="pagina" id="pagina-1">
+            <!-- <img src="introduccion.jpg" alt="Introducción"> -->
+            <p>Bienvenidos al entrenamiento de tripulante de cabina de pasajeros de Pluna. Mi nombre es Marina, y seré su principal instructora a lo largo de esta capacitación.</p>
+            <button class="next-button" onclick="cambiarPagina(2)">Siguiente</button>
+        </div>
+
+        <!-- Página 2: Seguridad y Procedimientos de Emergencia -->
+        <div class="pagina" id="pagina-2" style="display: none;">
+            <!-- <img src="seguridad.jpg" alt="Seguridad y Procedimientos de Emergencia"> -->
+            <p>Antes que nada me gustaría felicitarlos por haber sido seleccionados tras un riguroso proceso de selección. Cientos de candidatos se postulan año a año, siendo apenas unos pocos los egreados que lleguen a los estandares para volar con nosotros.</p>
+            <button class="prev-button" onclick="cambiarPagina(1)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(3)">Siguiente</button>
+        </div>
+
+        <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-3" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Asi que no se preocupen. Si bien este proceso es excluyente, en caso de quedar fuera de la selección final en esta oportunidad, podrán volver a postularse luego de dos meses tantas veces como quieran.</p>
+            <button class="prev-button" onclick="cambiarPagina(2)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(4)">Siguiente</button>
+        </div>
+
+          <!-- Página 4: Primeros Auxilios -->
+        <div class="pagina" id="pagina-4" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La capacitación inicial dentro de la aerolinea tiene una duración total de un mes, donde aprenderán todo lo necesário tanto a nivel práctico como técnico y legislativo, para tripular con tranquilidad y garantizar un vuelo seguro a otros.</p>
+            <button class="prev-button" onclick="cambiarPagina(3)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(5)">Siguiente</button>
+        </div>
+
+            <!-- Página 5: Primeros Auxilios -->
+        <div class="pagina" id="pagina-5" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Durante este periodo, estaremos viendo un módulo por dia, con un examen al final de cada módulo. Esta instancia es excluyente, solo serán aptos para volver al siguiente dia quienes hayan aprobado el examen anterior.</p>
+            <button class="prev-button" onclick="cambiarPagina(4)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(6)">Siguiente</button>
+        </div>
+
+             <!-- Página 6: Primeros Auxilios -->
+        <div class="pagina" id="pagina-6" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Parece exigente y realmente lo es. En Pluna no escatimamos recursos para mantener nuestros estandares excelencia.</p>
+            <button class="prev-button" onclick="cambiarPagina(5)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(7)">Siguiente</button>
+        </div>
+
+                 <!-- Página 7: Primeros Auxilios -->
+        <div class="pagina" id="pagina-7" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Y el haber llegado hasta aquí, significa que tienen la chance. Buena suerte a todos!.</p>
+           <a href="programa.html"> <button class="next-button">Volver</button></a>
+        </div>
+
+        <!-- Añadir más páginas según sea necesario -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
