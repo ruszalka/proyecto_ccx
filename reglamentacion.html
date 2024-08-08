@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Azafatas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Imagen centrada al medio del sitio -->
+      <img src="crew1.png" alt="Imagen Central" class="central-image">
+
+    <div id="novela-grafica">
+        <!-- Página 1: Introducción -->
+        <div class="pagina" id="pagina-1">
+            <!-- <img src="introduccion.jpg" alt="Introducción"> -->
+            <p>Bienvenidos al segundo día de capacitación. Espero que la prueba del dia de ayer les haya calmado los nervios.</p>
+            <button class="next-button" onclick="cambiarPagina(2)">Siguiente</button>
+        </div>
+
+        <!-- Página 2: Seguridad y Procedimientos de Emergencia -->
+        <div class="pagina" id="pagina-2" style="display: none;">
+            <!-- <img src="seguridad.jpg" alt="Seguridad y Procedimientos de Emergencia"> -->
+            <p>Como podrán ver, fue bastante sencillo. Bastaba con prestar atención a la clase y anotar los apuntes correctos para aprobar. Preferimos que asi sea.</p>
+            <button class="prev-button" onclick="cambiarPagina(1)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(3)">Siguiente</button>
+        </div>
+
+        <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-3" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Asi premiamos a los que aprovechan el curso en integridad. Siendo puntuales a las clases y atentos a los contenidos.</p>
+            <button class="prev-button" onclick="cambiarPagina(2)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(4)">Siguiente</button>
+        </div>
+
+          <!-- Página 4: Primeros Auxilios -->
+        <div class="pagina" id="pagina-4" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>De igual manera, sugerimos que guarden sus apuntes. A mitad de curso vamos a tener una examen mayor, con todo lo aprendido hasta el momento. Y otra final. Ambas excluyentes, aunque a diferencia de las demas evaluaciones, esos examenes podrán hacerlas hasta dos veces.</p>
+            <button class="prev-button" onclick="cambiarPagina(3)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(5)">Siguiente</button>
+        </div>
+
+            <!-- Página 5: Primeros Auxilios -->
+        <div class="pagina" id="pagina-5" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Pero ese es tema para otro momento. El dia de hoy vamos a aprender sobre la relgamentación nacional e internacional en la aeronautica.</p>
+            <button class="prev-button" onclick="cambiarPagina(4)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(6)">Siguiente</button>
+        </div>
+
+             <!-- Página 6: Primeros Auxilios -->
+        <div class="pagina" id="pagina-6" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La reglamentación en la aviación civil y específicamente en relación a los Tripulantes de Cabina de Pasajeros está sujeta a normativas nacionales e internacionales para garantizar la seguridad, la eficiencia y el buen funcionamiento de las operaciones aéreas. En la clase de hoy además, les proporcionaré una visión general de la reglamentación en Uruguay y en el ámbito internacional.</p>
+            <button class="prev-button" onclick="cambiarPagina(5)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(7)">Siguiente</button>
+        </div>
+
+          <!-- Página 7: Primeros Auxilios -->
+        <div class="pagina" id="pagina-7" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>En Uruguay, la autoridad encargada de la regulación y supervisión de la aviación civil es la Dirección Nacional de Aviación Civil e Infraestructura Aeronáutica (DINACIA). Esta entidad se encarga de aplicar las normativas y regulaciones que rigen la aviación en el país, incluyendo las relacionadas con los TCPs.</p>
+            <button class="prev-button" onclick="cambiarPagina(6)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(8)">Siguiente</button>
+        </div>
+
+            <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-8" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los TCPs deben obtener una Licencia de Tripulante de Cabina emitida por DINACIA. Para obtener la licencia, los aspirantes deben completar un curso de formación aprobado por DINACIA, que incluye formación en seguridad, primeros auxilios, procedimientos de emergencia, y evacuación, entre otros.</p>
+            <button class="prev-button" onclick="cambiarPagina(7)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(9)">Siguiente</button>
+        </div>
+
+            <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-9" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Se requiere la realización de exámenes médicos regulares para garantizar que los TCPs estén en condiciones físicas y psicológicas adecuadas para desempeñar sus funciones.</p>
+            <button class="prev-button" onclick="cambiarPagina(8)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(10)">Siguiente</button>
+        </div>
+
+                   <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-10" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los TCPs deben cumplir con las regulaciones relativas a horas de servicio, que limitan la cantidad de horas que pueden trabajar en un día o semana para evitar la fatiga.</p>
+            <button class="prev-button" onclick="cambiarPagina(9)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(11)">Siguiente</button>
+        </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-11" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Existe un enfoque riguroso en la formación continua, con requerimientos de capacitación periódica para mantener la licencia activa, especialmente en áreas clave como la seguridad y la atención médica de emergencia.</p>
+            <button class="prev-button" onclick="cambiarPagina(10)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(12)">Siguiente</button>
+        </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-12" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Las regulaciones también estipulan los procedimientos de seguridad que los TCPs deben seguir durante las operaciones de vuelo, incluyendo la inspección de equipos de emergencia, la instrucción a los pasajeros sobre procedimientos de seguridad, y la supervisión del cumplimiento de las normativas de seguridad a bordo.</p>
+            <button class="prev-button" onclick="cambiarPagina(11)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(13)">Siguiente</button>
+        </div>
+
+                 <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-13" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La normativa internacional en aviación civil está regulada por la Organización de Aviación Civil Internacional (OACI), una agencia especializada de las Naciones Unidas que establece normas y regulaciones para garantizar la seguridad y eficiencia del transporte aéreo en todo el mundo.</p>
+            <button class="prev-button" onclick="cambiarPagina(12)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(14)">Siguiente</button>
+        </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-14" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La OACI establece las Normas y Prácticas Recomendadas (SARPs), que son aplicadas por los Estados miembros a través de sus autoridades nacionales. Estas incluyen estándares para la formación y certificación de los TCPs, procedimientos de seguridad, y gestión de emergencias.</p>
+            <button class="prev-button" onclick="cambiarPagina(13)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(15)">Siguiente</button>
+        </div>
+
+                      <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-15" style="display: none;">
+                        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los Estados deben adaptar estas normas a sus legislaciones nacionales, lo que significa que las regulaciones de Uruguay están alineadas con las directrices de la OACI.</p>
+            <button class="prev-button" onclick="cambiarPagina(14)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(16)">Siguiente</button>
+        </div>
+
+                       <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-16" style="display: none;">
+                        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>El Convenio sobre Aviación Civil Internacional, también conocido como Convenio de Chicago, es el tratado fundacional de la OACI y establece los principios que rigen la aviación civil internacional, incluyendo la seguridad, la protección del medio ambiente, y los derechos de los Estados.</p>
+            <button class="prev-button" onclick="cambiarPagina(15)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(17)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-17" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>A través de este convenio, se garantiza que los TCPs reciban formación y certificación conforme a estándares internacionales, y que las aerolíneas cumplan con normativas uniformes en la operación de vuelos internacionales.</p>
+            <button class="prev-button" onclick="cambiarPagina(16)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(18)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-18" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>Las regulaciones internacionales también incluyen normas sobre las horas de trabajo y descanso para los TCPs, con el fin de mitigar la fatiga y garantizar que los tripulantes estén en óptimas condiciones para cumplir sus funciones.</p>
+            <button class="prev-button" onclick="cambiarPagina(17)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(19)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-19" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>La Asociación Internacional de Transporte Aéreo (IATA) también juega un rol importante, promoviendo buenas prácticas y estándares operacionales a nivel global.</p>
+            <button class="prev-button" onclick="cambiarPagina(18)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(20)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-20" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>El cumplimiento de estas normativas es supervisado tanto por las autoridades nacionales (como DINACIA en Uruguay) como por auditorías y evaluaciones realizadas por organismos internacionales. Las aerolíneas y los TCPs están sujetos a inspecciones y evaluaciones periódicas para garantizar que se adhieren a todas las regulaciones pertinentes, manteniendo los más altos niveles de seguridad y profesionalismo en la industria aérea.</p>
+            <button class="prev-button" onclick="cambiarPagina(19)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(21)">Siguiente</button>
+        </div>
+                 <!-- Página 7: Primeros Auxilios -->
+        <div class="pagina" id="pagina-21" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+                     <p>La clase de hoy fue bastante mas corta pero con informaciones mas sustanciales, si se quiere. Terminaremos por aqui, y los minutos restantes antes de la prueba los pueden usar para repasar con sus colegas. Aprovechen a conocerse, ya que trabajar en equipo es fundamental en el desempeño de sus futuras funciones.</p>
+           <a href="programa.html"> <button class="next-button">Volver</button></a>
+        </div>
+
+        <!-- Añadir más páginas según sea necesario -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
