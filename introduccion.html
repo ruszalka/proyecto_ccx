@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Azafatas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Imagen centrada al medio del sitio -->
+      <img src="crew1.png" alt="Imagen Central" class="central-image">
+
+    <div id="novela-grafica">
+        <!-- Página 1: Introducción -->
+        <div class="pagina" id="pagina-1">
+            <!-- <img src="introduccion.jpg" alt="Introducción"> -->
+            <p>Bienvenidos al entrenamiento de tripulante de cabina de pasajeros de Pluna. Mi nombre es Marina, y seré su principal instructora a lo largo de esta capacitación.</p>
+            <button class="next-button" onclick="cambiarPagina(2)">Siguiente</button>
+        </div>
+
+        <!-- Página 2: Seguridad y Procedimientos de Emergencia -->
+        <div class="pagina" id="pagina-2" style="display: none;">
+            <!-- <img src="seguridad.jpg" alt="Seguridad y Procedimientos de Emergencia"> -->
+            <p>Antes que nada me gustaría felicitarlos por haber sido seleccionados para esta capacitación tras un riguroso proceso. Cientos de candidatos se postulan año a año, siendo apenas unos pocos los egreados que lleguen a los estandares para volar con nosotros.</p>
+            <button class="prev-button" onclick="cambiarPagina(1)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(3)">Siguiente</button>
+        </div>
+
+        <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-3" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Asi que no se preocupen. Si bien este proceso es excluyente, en caso de quedar fuera de la selección final en esta oportunidad, podrán volver a postularse luego de dos meses tantas veces como quieran.</p>
+            <button class="prev-button" onclick="cambiarPagina(2)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(4)">Siguiente</button>
+        </div>
+
+          <!-- Página 4: Primeros Auxilios -->
+        <div class="pagina" id="pagina-4" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La capacitación inicial dentro de la aerolinea tiene una duración total de un mes, donde aprenderán todo lo necesário tanto a nivel práctico como técnico y legal, para tripular con tranquilidad y garantizar un vuelo seguro a otros.</p>
+            <button class="prev-button" onclick="cambiarPagina(3)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(5)">Siguiente</button>
+        </div>
+
+            <!-- Página 5: Primeros Auxilios -->
+        <div class="pagina" id="pagina-5" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Durante este periodo, estaremos viendo un módulo por dia, con un examen al final de cada módulo. Esta instancia es excluyente, solo serán aptos para volver al siguiente dia quienes hayan aprobado el examen anterior.</p>
+            <button class="prev-button" onclick="cambiarPagina(4)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(6)">Siguiente</button>
+        </div>
+
+             <!-- Página 6: Primeros Auxilios -->
+        <div class="pagina" id="pagina-6" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Parece exigente y realmente lo es. En Pluna no escatimamos recursos para mantener nuestros estandares excelencia.</p>
+            <button class="prev-button" onclick="cambiarPagina(5)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(7)">Siguiente</button>
+        </div>
+
+          <!-- Página 7: Primeros Auxilios -->
+        <div class="pagina" id="pagina-7" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>El dia de hoy aprenderemos sobre la historia de la aviación comercial y como el rol del Tripulante de Cabina de Pasajeros, o sea, ustedes, ha cambiado a lo largo del tiempo.</p>
+            <button class="prev-button" onclick="cambiarPagina(6)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(8)">Siguiente</button>
+        </div>
+
+            <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-8" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Les sugiero que tomen nota de las siguientes informaciones porque podrán usar los descansos para estudiar y revisar sus apuntes antes del examen.</p>
+            <button class="prev-button" onclick="cambiarPagina(7)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(9)">Siguiente</button>
+        </div>
+
+            <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-9" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Bien? Empecemos.</p>
+            <button class="prev-button" onclick="cambiarPagina(8)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(10)">Siguiente</button>
+        </div>
+
+                   <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-10" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Todo se remonta al inicio del sigo pasado, entre 1900 y 1920, luego después de la Primera Guerra Mundial, cuando se utilizaron aviones miliates desmantelados para el transporte de correo y pasajeros.</p>
+            <button class="prev-button" onclick="cambiarPagina(9)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(11)">Siguiente</button>
+        </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-11" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>En 1919, se estableció la primera aerolínea internacional, KLM, y la primera aerolínea estadounidense, American Airways (ahora American Airlines).</p>
+            <button class="prev-button" onclick="cambiarPagina(10)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(12)">Siguiente</button>
+        </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-12" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los primeros vuelos eran incómodos, ruidosos y solo accesibles para personas adineradas.</p>
+            <button class="prev-button" onclick="cambiarPagina(11)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(13)">Siguiente</button>
+        </div>
+
+                 <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-13" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>No fue hasta la década del 30 que se introdujeron aviones más grandes y seguros como el Douglas DC-3, que fue fundamental para la expansión de la aviación comercial.</p>
+            <button class="prev-button" onclick="cambiarPagina(12)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(14)">Siguiente</button>
+        </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-14" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Ya durante la Segunda Guerra Mundial, la aviación comercial se estancó, pero la tecnología desarrollada durante la guerra ayudó a mejorar la seguridad y eficiencia de los vuelos después.</p>
+            <button class="prev-button" onclick="cambiarPagina(13)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(15)">Siguiente</button>
+        </div>
+
+                      <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-15" style="display: none;">
+                        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La posguerra da inicio a la era del jet, que comenzó con el De Havilland Comet y, posteriormente, con el Boeing 707, lo que permitió vuelos más rápidos y eficientes.</p>
+            <button class="prev-button" onclick="cambiarPagina(14)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(16)">Siguiente</button>
+        </div>
+
+                       <!-- Página 8: Primeros Auxilios -->
+        <div class="pagina" id="pagina-16" style="display: none;">
+                        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los vuelos comerciales se hicieron más accesibles para la clase media, y el turismo internacional comenzó a florecer.</p>
+            <button class="prev-button" onclick="cambiarPagina(15)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(17)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-17" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los aeropuertos y las aerolíneas comenzaron a estandarizarse, estableciendo procedimientos de seguridad y confort para los pasajeros.</p>
+            <button class="prev-button" onclick="cambiarPagina(16)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(18)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-18" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La década del 70 da inicio a la era moderna de la aeronáutica. La introducción del Boeing 747 en 1970 marcó el inicio de la era de los aviones de fuselaje ancho, aumentando la capacidad de pasajeros y reduciendo los costos por asiento.</p>
+            <button class="prev-button" onclick="cambiarPagina(17)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(19)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-19" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>En la década de 1990, la aviación comercial se democratizó aún más con la aparición de aerolíneas de bajo costo como Southwest Airlines y Ryanair.</p>
+            <button class="prev-button" onclick="cambiarPagina(18)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(20)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-20" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Comenzamos los años 2000 y los avances no cesan. Avances tecnológicos como el Airbus A380 y el Boeing 787 Dreamliner han mejorado la eficiencia de combustible y el confort a bordo.</p>
+            <button class="prev-button" onclick="cambiarPagina(19)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(21)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-21" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La aviación comercial también enfrenta nuevos desafíos, como la sostenibilidad y la competencia en un mercado globalizado.</p>
+            <button class="prev-button" onclick="cambiarPagina(20)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(22)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-22" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Ahora tomaremos un descanso de 20 minutos, pueden aprovechar este tiempo para revisar sus apuntes. En la segunda mitad estaremos hablando del desarrollo de las funciones de los Tripulantes de Cabina de Pasajeros.</p>
+            <button class="prev-button" onclick="cambiarPagina(21)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(23)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-23" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Espero hayan podido relajarse pero no mucho, que la parte que viene es tan densa como interesante.</p>
+            <button class="prev-button" onclick="cambiarPagina(22)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(24)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-24" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Hablaremos sobre el desarrollo de la carrera de TCP (Tripulante de Cabina de Pasajeros) y sus funciones.</p>
+            <button class="prev-button" onclick="cambiarPagina(23)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(25)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-25" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>La carrera de TCP comenzó en los años 1920, con las primeras azafatas, quienes originalmente eran enfermeras contratadas para garantizar la seguridad y el bienestar de los pasajeros en vuelos que a menudo eran turbulentos y riesgosos.</p>
+            <button class="prev-button" onclick="cambiarPagina(24)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(26)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-26" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Las primeras TCP también tenían la tarea de ayudar con la carga de equipaje, servir comidas y bebidas, y proporcionar primeros auxilios.</p>
+            <button class="prev-button" onclick="cambiarPagina(25)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(27)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-27" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>En la década de 1930, las TCP se convirtieron en un símbolo de modernidad y glamour. Su trabajo seguía siendo enfocado en la seguridad, pero también en la hospitalidad.</p>
+            <button class="prev-button" onclick="cambiarPagina(26)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(28)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-28" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Durante los años 1940 y 1950, las funciones de las TCP se ampliaron con la introducción de aviones más grandes y la comercialización del viaje aéreo. Además de atender a los pasajeros, se esperaba que representaran a la aerolínea con elegancia y profesionalismo.</p>
+            <button class="prev-button" onclick="cambiarPagina(27)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(29)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-29" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Con la introducción de los aviones jet y el aumento del tráfico aéreo, la capacitación de las TCP se volvió más rigurosa, con énfasis en la evacuación de emergencia, el manejo de crisis, y la atención médica.</p>
+            <button class="prev-button" onclick="cambiarPagina(28)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(30)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-30" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>En los años 1970, se comenzaron a romper estereotipos, permitiendo a hombres entrar a la profesión y eliminando restricciones de edad y apariencia física para las TCP.</p>
+            <button class="prev-button" onclick="cambiarPagina(29)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(31)">Siguiente</button>
+        </div>
+        
+        <div class="pagina" id="pagina-31" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>En la actualidad, los TCP son profesionales altamente capacitados en seguridad, atención al cliente, y manejo de situaciones de emergencia.</p>
+            <button class="prev-button" onclick="cambiarPagina(30)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(32)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-32" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Las aerolíneas han aumentado la diversidad en sus equipos de cabina y han enfocado la capacitación en la gestión de pasajeros problemáticos, manejo de desastres, y la adaptación cultural.</p>
+            <button class="prev-button" onclick="cambiarPagina(31)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(33)">Siguiente</button>
+        </div>
+
+        <div class="pagina" id="pagina-33" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Las responsabilidades de las TCP han crecido con la expansión del servicio a bordo, el incremento de la seguridad aérea, y la atención a pasajeros con necesidades especiales.</p>
+            <button class="prev-button" onclick="cambiarPagina(32)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(34)">Siguiente</button>
+        </div>
+        
+
+                 <!-- Página 7: Primeros Auxilios -->
+        <div class="pagina" id="pagina-34" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Hoy en día, ser TCP implica no solo ser el rostro visible de la aerolínea, sino también garantizar la seguridad de los pasajeros y del vuelo en general, lo que convierte esta carrera en una mezcla única de hospitalidad y profesionalismo en situaciones de alta presión.</p>
+           <a href="programa.html"> <button class="next-button">Volver</button></a>
+        </div>
+
+
+        
+        <!-- Añadir más páginas según sea necesario -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

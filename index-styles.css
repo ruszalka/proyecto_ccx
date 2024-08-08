@@ -20,10 +20,13 @@ body {
 }
 
 #inicio h1 {
-    color: white;
-    background-color: #224a75;
-    font-size: 48px;
     margin-bottom: 20px;
+    /* background-color: #224a75; */
+    color:white;
+    font-size: 3em;
+    text-align: center;
+    /* backdrop-filter: drop-shadow(6px 10px 10px black); */
+    text-shadow: 4px 4px 8px black;
 }
 
 .button {
