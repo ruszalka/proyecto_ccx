@@ -1,8 +1,8 @@
 body {
-    margin: 30% 10% 0 10%;
+    margin: 50px auto;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background0.png'); /* Cambia esta ruta por la de tu imagen */
+    background-image: url(background0.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -10,20 +10,29 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
+    max-width: 1360px;
+    width: 100%;
 }
 
 h2 {
     margin-bottom: 20px;
-    background-color: #224a75;
+    /* background-color: #224a75; */
     font-size: 3em;
+    text-align: center;
+    /* backdrop-filter: drop-shadow(6px 10px 10px black); */
+    text-shadow: 4px 4px 8px black;
 }
 
 .button-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(5, 1fr); */
     gap: 10px;
+    width: 100%;
 }
 
 .button-grid .button {
@@ -33,7 +42,8 @@ h2 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
+    width: 130px;
+    width: clamp(20rem, 5rem, 5rem);
     transition: background-color 0.3s ease;
 }
 
