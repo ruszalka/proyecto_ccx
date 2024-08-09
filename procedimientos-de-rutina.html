@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Azafatas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Imagen centrada al medio del sitio -->
+      <img src="crew1.png" alt="Imagen Central" class="central-image">
+
+    <div id="novela-grafica">
+        <!-- Página 1: Introducción -->
+        <div class="pagina" id="pagina-1">
+            <!-- <img src="introduccion.jpg" alt="Introducción"> -->
+            <p>Bienvenidos a todos nuevamente. Es un placer ver que se mantienen firmes y fuertes en el camino de convertirse en grandes tripulantes.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="next-button" onclick="cambiarPagina(2)">Siguiente</button>
+        </div>
+
+        <!-- Página 2: Seguridad y Procedimientos de Emergencia -->
+        <div class="pagina" id="pagina-2" style="display: none;">
+            <!-- <img src="seguridad.jpg" alt="Seguridad y Procedimientos de Emergencia"> -->
+            <p>Espero que vayan sintiendo esta sala poco a poco como su propio hogar. Porque cuando menos lo esperen, lo será.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(1)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(3)">Siguiente</button>
+        </div>
+
+        <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-3" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Sin mas dilación, el día de hoy hablaremos sobre los procedimientos de rutina, obligaciones y responsabilidades.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(2)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(4)">Siguiente</button>
+        </div>
+
+            <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-4" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Empecemos.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(3)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(5)">Siguiente</button>
+        </div>
+
+         <!-- Página 5: Primeros Auxilios -->
+         <div class="pagina" id="pagina-5" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Los Tripulantes de Cabina de Pasajeros (TCPs) tienen un papel crucial en la operación segura y eficiente de un vuelo. Sus procedimientos de rutina, obligaciones y responsabilidades están diseñados para garantizar la seguridad, comodidad y bienestar de los pasajeros, así como para colaborar con la tripulación técnica en la gestión de emergencias.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(4)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(6)">Siguiente</button>
+        </div>
+
+         <!-- Página 6: Primeros Auxilios -->
+    <div class="pagina" id="pagina-6" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs se reúnen con el resto de la tripulación antes de cada vuelo para recibir un informe sobre las condiciones del vuelo, el número de pasajeros, información específica sobre pasajeros con necesidades especiales, y repasar procedimientos de emergencia. A este procedimiento le llamamos briefing, y se realiza siempre previo al vuelo en cuestión.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(5)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(7)">Siguiente</button>
+    </div>
+
+      <!-- Página 7: Primeros Auxilios -->
+    <div class="pagina" id="pagina-7" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Enseguida después del briefing, los TCPs inspeccionan el equipo de emergencia a bordo, como chalecos salvavidas, extintores, botiquines de primeros auxilios, y las salidas de emergencia para asegurarse de que todo esté en su lugar y en buen estado.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(6)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(8)">Siguiente</button>
+    </div>
+
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-8" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Una vez realizada la inspección, se hace la preparación de cabina. Se verifica que los compartimentos de equipaje estén cerrados, que los asientos estén en posición vertical, y que los cinturones de seguridad estén visibles y accesibles. También se asegura que los baños estén en condiciones óptimas. Nos certificamos de que todo esté listo para la recepción de los pasajeros.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(7)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(9)">Siguiente</button>
+    </div>
+
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-9" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Cuando todo esté listo y chequeado, los TCPs dan la bienvenida a los pasajeros a bordo, los ayudan a encontrar sus asientos y aseguran que coloquen su equipaje de manera adecuada.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(8)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(10)">Siguiente</button>
+    </div>
+
+               <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-10" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Proporcionan asistencia a pasajeros con discapacidades, personas mayores, y familias con niños pequeños, ayudándolos a acomodarse y a entender las instrucciones de seguridad.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(9)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(11)">Siguiente</button>
+    </div>
+
+          <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-11" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Se supervisa el cumplimiento. Aseguran que los pasajeros sigan las normativas de seguridad, como el uso del cinturón de seguridad, la colocación de dispositivos electrónicos en modo avión, y la ubicación correcta de los equipajes.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(10)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(12)">Siguiente</button>
+    </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-12" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Dadas las condiciones óptimas, se puede despegar. Pero nunca antes del briefing, inspección de seguridad, preparación de cabina, recepción de pasajeros, asistenica especial y supervisión de cumplimiento.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(11)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(13)">Siguiente</button>
+    </div>
+
+             <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-13" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Una vez en el aire, se hace la demostración de seguridad. Los TCPs realizan o supervisan la demostración de seguridad al inicio del vuelo, donde se explica a los pasajeros cómo utilizar los cinturones de seguridad, máscaras de oxígeno, chalecos salvavidas y las salidas de emergencia.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(12)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(14)">Siguiente</button>
+    </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-14" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>De estar contemplado, se da el servicio a bordo. Los TCPs encargan de servir alimentos y bebidas a los pasajeros, y de atender solicitudes, garantizando un servicio de alta calidad. Siempre y cuando el servicio esté incluido, y las condiciones climáticas lo habiliten. No se da el servicio a bordo en condiciones adversas, como por ejemplo, turbulencias.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(13)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(15)">Siguiente</button>
+    </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-15" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p> Los TCPs realizan recorridos regulares por la cabina para verificar el bienestar de los pasajeros, responder preguntas, y asegurarse de que no haya situaciones inusuales o peligrosas.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(14)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(16)">Siguiente</button>
+    </div>
+
+                   <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-16" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>En caso de turbulencia, despresurización, incendio, o cualquier otro tipo de emergencia, los TCPs deben seguir procedimientos estrictos para proteger a los pasajeros y mantener la calma en la cabina.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(15)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(17)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-17" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Una vez en tierra, supervisan el desembarque de los pasajeros, asegurándose de que lo hagan de manera ordenada y segura.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(16)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(18)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-18" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Y por último, se hace una revisión final de la cabina. Después de que los pasajeros han desembarcado, los TCPs realizan una inspección final de la cabina para asegurarse de que no haya quedado nada fuera de lugar, y de que no se hayan dejado objetos personales en el avión.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(17)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(19)">Siguiente</button>
+    </div>
+
+    
+    <div class="pagina" id="pagina-19" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Todas estas son nuestras responsabilidades y obligaciones como Tripulates de Cabina de Pasajeros.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(18)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(20)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-20" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>La responsabilidad primordial de un TCP es la seguridad de los pasajeros. Esto incluye asegurarse de que todos cumplan con las normativas de seguridad y estar preparados para actuar en caso de una emergencia.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(19)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(21)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-21" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Los TCPs son responsables de conocer y poder ejecutar los procedimientos de evacuación y uso del equipo de emergencia.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(20)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(22)">Siguiente</button>
+    </div>
+
+            <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-22" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs están capacitados para proporcionar primeros auxilios y asistir en emergencias médicas, utilizando el equipo disponible a bordo como botiquines de primeros auxilios y desfibriladores automáticos externos (DEA).</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(21)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(23)">Siguiente</button>
+    </div>
+
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-23" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Deben saber cómo coordinarse con profesionales médicos en tierra en caso de una emergencia grave a bordo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(24)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(25)">Siguiente</button>
+    </div>
+
+               <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-24" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs deben manejar situaciones de pasajeros conflictivos o disruptivos, asegurando que su comportamiento no ponga en peligro la seguridad del vuelo ni la comodidad de los demás pasajeros.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(23)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(25)">Siguiente</button>
+    </div>
+
+          <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-25" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>En casos extremos, los TCPs tienen la autoridad para informar al comandante y solicitar medidas disciplinarias, como la restricción de un pasajero a bordo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(24)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(26)">Siguiente</button>
+    </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-26" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Entre su larga lista de tareas, están obligados a cumplir y hacer cumplir todas las regulaciones de aviación aplicables, tanto nacionales como internacionales.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(25)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(27)">Siguiente</button>
+    </div>
+
+             <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-27" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Deben seguir estrictamente los procedimientos establecidos por la aerolínea y las autoridades de aviación para cada etapa del vuelo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(26)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(28)">Siguiente</button>
+    </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-28" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs mantienen una comunicación constante con la cabina de mando, informando al comandante de cualquier irregularidad, emergencia o situación especial que ocurra en la cabina de pasajeros.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(27)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(29)">Siguiente</button>
+    </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-29" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Deben estar preparados para asistir a la tripulación técnica en situaciones críticas, como aterrizajes de emergencia.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(28)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(30)">Siguiente</button>
+    </div>
+
+                   <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-30" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Además, tienen otras responsabilidades adicionales.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(29)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(31)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-31" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Los TCPs deben mantener la confidencialidad sobre la información del vuelo y de los pasajeros, y actuar siempre con profesionalismo.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(30)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(32)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-32" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Están obligados a participar en programas de formación continua para mantenerse actualizados en las normativas y procedimientos de seguridad, así como en nuevas técnicas de atención al cliente.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(31)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(33)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-33" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Dado que su trabajo puede ser físicamente exigente y estresante, los TCPs deben mantener un buen estado de salud física y mental, cumpliendo con los requisitos médicos establecidos por las autoridades.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(32)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(34)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-34" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Estas obligaciones y responsabilidades hacen que los TCPs sean una parte esencial en la operación segura y efectiva de cualquier vuelo, más allá del aspecto de servicio al cliente que es más visible para los pasajeros.</p>
+         <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(33)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(35)">Siguiente</button>
+    </div>
+
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-35" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>Como habrán notado a estas alturas, ser Tripulante de Cabina de Pasajeros mas que un trabajo, es un estilo de vida.</p>
+             <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(34)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(36)">Siguiente</button>
+    </div>
+    
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-36" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Será transversal a cada aspecto de su rutina, desde la alimentación, el sueño, su salud mental, hasta su forma de comunicarse, observar el mundo y otras personas.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(35)">Anterior</button>
+         <button class="next-button" onclick="cambiarPagina(37)">Siguiente</button>
+    </div>
+    
+                <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-37" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Además, afectará a sus calendarios y por consiguiente, sus encuentros con familias y amigos.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(36)">Anterior</button>
+         <button class="next-button" onclick="cambiarPagina(38)">Siguiente</button>
+    </div>
+    
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-38" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>El equipo de tripulación, también llamado Cabin Crew, será como su familia.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(37)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(39)">Siguiente</button>
+    </div>
+    
+                  <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-39" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los unos a los otros serán el único apoyo fraternal que tendrán a 40.000 pies de altura.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(38)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(40)">Siguiente</button>
+    </div>
+    
+                 <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-40" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Pues bien. Como hemos visto hoy, no es todo pasta y pollo, o viajes gratis.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(39)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(41)">Siguiente</button>
+    </div>
+    
+                  <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-41" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Ser un gran Tripulante de Cabina conlleva a una gran responsabilidad.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(40)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(42)">Siguiente</button>
+    </div>
+    
+    <div class="pagina" id="pagina-42" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Hagamos una pausa de unos minutos, para volver a la prueba de hoy. No piensen que se han salvado todavia, jaja.</p>
+<a href="programa.html"> <button class="next-button">Inicio</button></a>
+</div>
+
+        <!-- Añadir más páginas según sea necesario -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
