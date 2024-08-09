@@ -1,5 +1,4 @@
 // script.js
-
 function cambiarPagina(paginaNumero) {
     const paginas = document.querySelectorAll('.pagina');
     paginas.forEach(pagina => pagina.style.display = 'none');
