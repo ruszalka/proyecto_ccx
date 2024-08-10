@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Azafatas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <!-- Imagen centrada al medio del sitio -->
+      <img src="crew2.png" alt="Imagen Central" class="central-image">
+
+      <div id="novela-grafica">
+        <!-- Página 1: Introducción -->
+        <div class="pagina" id="pagina-1">
+            <!-- <img src="introduccion.jpg" alt="Introducción"> -->
+            <p>Buenos dias a todos. Hoy concluimos la primera semana de curso. Asi que daremos un ultimo empujon hasta el tan deseado fin de semana, que me imagino estarán esperando.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="next-button" onclick="cambiarPagina(2)">Siguiente</button>
+        </div>
+
+        <!-- Página 2: Seguridad y Procedimientos de Emergencia -->
+        <div class="pagina" id="pagina-2" style="display: none;">
+            <!-- <img src="seguridad.jpg" alt="Seguridad y Procedimientos de Emergencia"> -->
+            <p>Como habrán visto en el calendário del curso, hoy daremos el módulo de meteorología básica.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(1)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(3)">Siguiente</button>
+        </div>
+
+        <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-3" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>El conocimiento básico de meteorología es crucial para los Tripulantes de Cabina de Pasajeros, ya que les permite entender las condiciones atmosféricas que pueden afectar el vuelo y prepararse para manejar situaciones relacionadas con el clima de manera eficaz. Aquí te presento un resumen de los conceptos meteorológicos esenciales para los TCPs.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(2)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(4)">Siguiente</button>
+        </div>
+
+            <!-- Página 3: Primeros Auxilios -->
+        <div class="pagina" id="pagina-4" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+            <p>Empecemos con los fundamentos de la meteorología.</p>
+            <a href="programa.html"> <button class="next-button">Inicio</button></a>
+            <button class="prev-button" onclick="cambiarPagina(3)">Anterior</button>
+            <button class="next-button" onclick="cambiarPagina(5)">Siguiente</button>
+        </div>
+
+         <!-- Página 5: Primeros Auxilios -->
+         <div class="pagina" id="pagina-5" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>Primero. Los TCPs deben entender que la atmósfera está compuesta por varias capas (troposfera, estratosfera, etc.), pero la mayoría de los fenómenos meteorológicos que afectan el vuelo ocurren en la troposfera, que se extiende hasta unos 12 km de altura.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(4)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(6)">Siguiente</button>
+    </div>
+
+         <!-- Página 6: Primeros Auxilios -->
+    <div class="pagina" id="pagina-6" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+             <p>Segundo, deben entender la presión atmosférica. Es la fuerza que el aire ejerce sobre la superficie de la Tierra. Los TCPs deben conocer que las variaciones en la presión atmosférica pueden afectar la altitud y el rendimiento de la aeronave, así como la percepción de los pasajeros, especialmente durante el despegue y el aterrizaje.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(5)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(7)">Siguiente</button>
+    </div>
+
+      <!-- Página 7: Primeros Auxilios -->
+    <div class="pagina" id="pagina-7" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Tercero y no menos importante, la temperatura. La temperatura del aire disminuye con la altitud. Este enfriamiento afecta la densidad del aire, lo que a su vez puede influir en el rendimiento del avión y la formación de fenómenos como el hielo en las alas.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(6)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(8)">Siguiente</button>
+    </div>
+
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-8" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+         <p>Hasta aquí todo claro? Pues, seguimos.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(7)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(9)">Siguiente</button>
+    </div>
+
+        <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-9" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Otro conjunto de factores importantes son los fenómenos meteorológicos comunes.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(8)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(10)">Siguiente</button>
+    </div>
+
+               <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-10" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Como por ejemplo, las turbulencias. Hoy mencionaremos dos de ellas.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(9)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(11)">Siguiente</button>
+    </div>
+
+          <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-11" style="display: none;">
+            <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Primero tenemos a la Turbulencia en Aire Claro (CAT). Ocurre en cielos despejados, generalmente en niveles altos, y no está asociada a nubes o tormentas. Puede ser difícil de prever, pero los TCPs deben saber cómo prepararse y preparar a los pasajeros cuando se anticipa.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(10)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(12)">Siguiente</button>
+    </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-12" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Después, tenemos la Turbulencia Convectiva. La misma es asociada con tormentas o formaciones nubosas como cúmulos o cumulonimbos, donde las corrientes de aire ascendente y descendente causan movimientos bruscos. </p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(11)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(13)">Siguiente</button>
+    </div>
+
+             <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-13" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs deben asegurarse de que los pasajeros tengan el cinturón de seguridad abrochado cuando se anticipa turbulencia, asegurar todos los objetos sueltos en la cabina y estar preparados para suspender el servicio a bordo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(12)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(14)">Siguiente</button>
+    </div>
+
+              <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-14" style="display: none;">
+                <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p></p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(13)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(15)">Siguiente</button>
+    </div>
+
+                  <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-15" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(14)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(16)">Siguiente</button>
+    </div>
+
+                   <!-- Página 8: Primeros Auxilios -->
+    <div class="pagina" id="pagina-16" style="display: none;">
+                    <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(15)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(17)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-17" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(16)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(18)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-18" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(17)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(19)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-19" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(18)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(20)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-20" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(19)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(21)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-21" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Además de las partes de la aeronave, es indispensable que sepan el funcionamiento básico de los motores y
+            a diferenciarlos entre los diferentes tipos que existen.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(20)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(22)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-22" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Existen los motores de Turbina (también llamados Jets). Los aviones comerciales modernos suelen estar
+            equipados con motores de turbina, que funcionan tomando aire, comprimiéndolo, mezclándolo con
+            combustible y quemándolo para generar empuje.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(21)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(23)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-23" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Existen los motores de Pistón (comúnes en Aviación General). Aunque menos comunes en aviones comerciales
+            grandes, los TCPs pueden estar expuestos a aeronaves más pequeñas con motores de pistón, que funcionan
+            de manera similar a los motores de automóvil, utilizando cilindros para generar movimiento mecánico.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(22)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(24)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-24" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs deben estar familiarizados con los ruidos normales asociados con el funcionamiento del motor,
+            como el aumento de la potencia durante el despegue o la reducción durante el aterrizaje. Deberían poder
+            identificar ruidos o vibraciones inusuales que puedan indicar un problema.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(23)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(25)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-25" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>También tienen que tener en cuenta los sistemas principales del avión.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(24)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(26)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-26" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>El sistema electrico proporciona energía para la iluminación, los sistemas de entretenimiento, los
+            equipos de comunicación y otros sistemas críticos. Es importante que los TCPs comprendan qué hacer en
+            caso de un fallo eléctrico, como el uso de iluminación de emergencia.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(25)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(27)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-27" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>El sistema hidráulico controla los sistemas que requieren una gran cantidad de fuerza, como el tren de
+            aterrizaje, los frenos y las superficies de control de vuelo. Conocer las ubicaciones de los componentes
+            hidráulicos es útil en caso de emergencias que afecten estas áreas.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(26)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(28)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-28" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los sistemas de presurización y aire acondicionado mantienen la presión y el aire en niveles seguros y
+            confortables dentro de la cabina. Los TCPs deben estar capacitados para actuar en caso de una
+            despresurización, utilizando las máscaras de oxígeno y asegurando que los pasajeros también lo hagan.
+        </p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(27)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(29)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-29" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Y el sistema de combustible que distribuye el combustible a los motores de manera uniforme. Los TCPs
+            deben tener conocimientos sobre la seguridad del combustible, especialmente en situaciones de emergencia
+            como fuego a bordo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(28)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(30)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-30" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Ahora, que sucede en caso de que alguno de estos sistemas o partes del avión no funcionen correctamente?
+            Para ello, tenemos procedimientos de emergencia relacionados a las aeronaves y motores correspondientes.
+        </p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(29)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(31)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-31" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Hay que saber cómo manejar una despresurización repentina, incluida la activación de las máscaras de
+            oxígeno y la instrucción a los pasajeros sobre su uso.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(30)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(32)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-32" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs deben estar preparados para las posibles consecuencias de un fallo de motor, como un aterrizaje
+            de emergencia, y cómo deben asistir en tales situaciones.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(31)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(33)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-33" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Deben tener conocimiento de los procedimientos para manejar incendios en motores o en la cabina,
+            incluyendo el uso de extintores y la coordinación con la cabina de mando.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(32)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(34)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-34" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p> Y entender cómo la configuración de la aeronave afecta los procedimientos de evacuación y cómo guiar a
+            los pasajeros hacia las salidas de emergencia de manera segura y rápida.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(33)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(35)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-35" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Todo esto deben aprenderlo para poder solucionar cualquier incidiente dentro del avión, con ayuda de sus
+            colegas de TCPs y una comunicación asertiva con la tripulación técnica.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(34)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(36)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-36" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Los TCPs deben conocer la terminología básica utilizada por los pilotos y el personal técnico para poder
+            comunicarse de manera efectiva durante las operaciones regulares y en situaciones de emergencia.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(35)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(37)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-37" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Saber cómo y cuándo informar sobre anomalías observadas, como ruidos inusuales, vibraciones, o
+            comportamiento extraño de los pasajeros que podría afectar la seguridad del vuelo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(36)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(38)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-38" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Este conocimiento técnico básico no solo ayuda a los TCPs a desempeñar mejor sus funciones diarias, sino
+            que es crucial en situaciones de emergencia, donde una comprensión de los sistemas de la aeronave puede
+            ser la diferencia entre una respuesta efectiva y una situación peligrosa. Además, este conocimiento les
+            permite brindar información precisa y tranquilizadora a los pasajeros en momentos críticos, lo que es
+            fundamental para mantener la calma y la seguridad a bordo.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(37)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(39)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-39" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p>Bueno, eso ha sido todo por hoy. Espero que la clase les haya dado una idea un poco mas técnica del
+            desempeño de sus futuras tareas.</p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+        <button class="prev-button" onclick="cambiarPagina(38)">Anterior</button>
+        <button class="next-button" onclick="cambiarPagina(40)">Siguiente</button>
+    </div>
+
+    <div class="pagina" id="pagina-40" style="display: none;">
+        <!-- <img src="primeros_auxilios.jpg" alt="Primeros Auxilios"> -->
+        <p></p>
+        <a href="programa.html"> <button class="next-button">Inicio</button></a>
+    </div>
+
+
+        <!-- Añadir más páginas según sea necesario -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
